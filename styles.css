@@ -4,7 +4,7 @@
 
 
 /* colors */
-div {
+.placeholder {
     /* - Dark Blue (intro and email sign up background):  */
     color: hsl(217, 28%, 15%);
     /* - Dark Blue (main background): */
@@ -33,18 +33,16 @@ div {
 .grid {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: auto, repeat(3, 100px);
+    grid-template-rows: auto repeat(4, auto);
     grid-template-areas: 
         "img"
         "h1"
         "p"
         "btn"
+        ".."
     ;
 
-    background: url(images/bg-curvy-mobile.svg);
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: contain;
+    
 }
 
 .grid-child {
@@ -58,8 +56,24 @@ h1 {
     grid-area: h1;
 }
 
+h2 {
+    grid-area: h2;
+}
+
+h3 {
+    grid-area: h3;
+}
+
 p {
     grid-area: p;
+}
+
+.p1 {
+    grid-area: p1;
+}
+
+.p2 {
+    grid-area: p2;
 }
 
 img {
@@ -68,6 +82,10 @@ img {
 
 button {
     grid-area: btn;
+}
+
+a {
+    grid-area: a;
 }
 
 /* ===== mobile:grid end ===== */
@@ -102,14 +120,58 @@ main {
 }
 
 .sm-img {
-
+    margin: 40px auto;
 }
 
 /* ===== mobile: intro styling  ===== */
 .intro {
+    background: url(images/bg-curvy-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
     background-color: hsl(217, 28%, 15%);
-    
 }
+
+
+/* ===== mobile: benefits styling ===== */
+.benefits > .grid {
+    grid-template-areas: 
+        "img"
+        "h2"
+        "p"
+        ".."
+    ;
+
+    text-align: center;
+}
+
+.benefits > .grid > .margin-child {
+    margin: 5px 0;
+}
+
+/* ===== mobile: stay productive styling ===== */
+.stay-productive > .grid {
+    grid-template-areas: 
+        "img"
+        "h2"
+        "p1"
+        "p2"
+        "a"
+    ;
+}
+
+/* ===== mobile: testimonials styling ===== */
+.testimonials > .grid {
+    grid-template-columns: repeat(2, auto);
+    grid-template-areas: 
+    ".. .."
+    ".. .."
+    "p p"
+    "img h2"
+    "img h3"
+    ;
+}
+
 
 
 /* ===== desktop styling ===== */
@@ -132,6 +194,71 @@ main {
     background-position: bottom;
     background-size: contain;
     background-color: hsl(217, 28%, 15%)
+}
+
+
+/* ===== desktop:benefits styling ===== */
+
+.benefits {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+        "sec1 sec2"
+        "sec3 sec4"
+    ;
+
+    row-gap: 100px;
+    column-gap: 100px;
+}
+
+
+.benefits > div:first-child {
+    grid-area: sec1;
+}
+.benefits > div:nth-child(2) {
+    grid-area: sec2;
+}
+.benefits > div:nth-child(3) {
+    grid-area: sec3;
+}
+.benefits > div:nth-child(4) {
+    grid-area: sec4;
+}
+
+
+/* ===== desktop:stay productive styling ===== */
+.stay-productive > .grid {
+    grid-template-columns: auto auto;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: 
+        "img h2"
+        "img p1"
+        "img p2"
+        "img a"
+    ;
+}
+
+/* ===== desktop:testimonials styling ===== */
+.testimonials {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "t1 t2 t3"
+    ;
+}
+
+.testimonials > div:first-child {
+    grid-area: t1;
+}
+
+.testimonials > div:nth-child(2) {
+    grid-area: t2;
+}
+
+.testimonials > div:nth-child(3) {
+    grid-area: t3;
 }
 
 
