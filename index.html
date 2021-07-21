@@ -4,17 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
+  <meta name="description" content="Fylo landing page">
+  <meta name="keywords" content="Fylo, secure files, access anywhere">
+
+
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="styles.css">
 
   
-  <title>Frontend Mentor | Fylo landing page with dark theme and features grid</title>
+  <title>Fylo</title>
 
 </head>
 <body>
-  <header>
+  <header role="banner">
     <img src="images/logo.svg" alt="Fylo logo">
-    <nav>
+    <nav aria-label="page navigation" role="navigation"> 
       <ul>
         <li>Features</li>
         <li>Team</li>
@@ -22,8 +26,8 @@
       </ul>
     </nav>
   </header>
-<main>
-  <section class="intro padding">
+<main role="main">
+  <section role="region" aria-label="introduction section" class="intro padding">
     <div class="grid" aria-hidden="true">
       <img class="grid-child img lg-img margin-child" src="images/illustration-intro.png" alt="Two people working through paperwork.">
       <h1 class="grid-child margin-child">All your files in one secure location, accessible anywhere.</h1>
@@ -33,7 +37,7 @@
     </div>
   </section>
 
-  <section class="benefits padding">
+  <section role="region" aria-label="Benefits of using fylo" class="benefits padding">
     <div class="grid" aria-hidden="true">
       <img class="sm-img" src="images/icon-access-anywhere.svg" alt="PC and smartphone with map to show access from everywhere">
       <h2 class="margin-child">Access your files, anywhere</h2>
@@ -64,7 +68,7 @@
 
   </section>
 
-<section class="stay-productive">
+<section role="region" aria-label="Stay productive with fylo" class="stay-productive">
   <div class="grid" aria-hidden="true">
     <img class="grid-child img lg-img margin-child" src="images/illustration-stay-productive.png" alt="Three people working together on different devices">
     <h2 class="grid-child margin-child">Stay productive, wherever you are</h2>
@@ -76,7 +80,7 @@
       </div>
 </section>
 
-<section class="testimonials">
+<section role="region" aira-label="Testimonials for fylo" class="testimonials">
   <div class="grid" aria-hidden="true">
     <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has 
     become a well-oiled collaboration machine.</p>
@@ -99,7 +103,7 @@
     <img src="images/profile-3.jpg" alt="Image of Iva Boyd">
   </div>
 </section>
-<section class="sign-up">
+<section role="region" aria-label="Sign up for fylo" class="sign-up">
   <div class="grid" aria-hidden="true">
     <h2 class="grid-child">  Get early access today</h2>
     <p class="grid-child">It only takes a minute to sign up and our free starter tier is extremely generous. If you have any 
@@ -111,10 +115,10 @@
   </div>
 </section>
   
-<footer class="grid">
+<footer role="contentinfo" class="grid">
   <img src="images/logo.svg" alt="Fylo logo">
 
-  <nav class="contact">
+  <nav role="navigation" aria-label="navigate the fylo contact info" class="contact">
     <ul>
       <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
         dolore magna aliqua</li>
@@ -123,7 +127,7 @@
     </ul>
   </nav>
 
-  <nav class="about-us">
+  <nav role="navigation" aria-label="navigate the general info about fylo" class="about-us">
     <ul>
       <li>About Us</li>
       <li>Jobs</li>
@@ -132,7 +136,7 @@
     </ul>
   </nav>
   
-  <nav class="legal">
+  <nav role="navigation" aria-label="legal information" class="legal">
     <ul>
       <li>Contact Us</li>
       <li>Terms</li>
@@ -140,7 +144,7 @@
     </ul>
   </nav>
 
-  <nav class="social">
+  <nav role="navigation" aria-label="Socialmedia contacts of fylo" class="social">
     <ul>
       <li>facebook</li>
       <li>twitter</li>
