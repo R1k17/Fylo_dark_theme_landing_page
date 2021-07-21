@@ -100,11 +100,16 @@ form {
 body {
     margin: 0;
     color: #fff;
+    background-color: hsl(217, 28%, 15%);
 }
 
 
 main {
     background-color: hsl(218, 28%, 13%); 
+}
+
+footer {
+    background-color: hsl(216, 53%, 9%);
 }
 
 .padding {
@@ -126,6 +131,20 @@ main {
 .sm-img {
     margin: 40px auto;
 }
+
+/* ===== mobile: header styling  ===== */
+header > img {
+    width: 80px;
+}
+
+header > nav {
+    display: inline-block;
+}
+
+header > nav > ul > li {
+    display: inline-block;
+}
+
 
 /* ===== mobile: intro styling  ===== */
 .intro {
@@ -165,6 +184,10 @@ main {
 }
 
 /* ===== mobile: testimonials styling ===== */
+.testimonials {
+    background-color: hsl(219, 30%, 18%);
+}
+
 .testimonials > .grid {
     grid-template-columns: repeat(2, auto);
     grid-template-areas: 
