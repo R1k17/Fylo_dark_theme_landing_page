@@ -88,6 +88,10 @@ a {
     grid-area: a;
 }
 
+form {
+    grid-area: form;
+}
+
 /* ===== mobile:grid end ===== */
 
 
@@ -172,7 +176,43 @@ main {
     ;
 }
 
+/* ===== mobile: sign-up styling ===== */
+.sign-up > .grid {
+    grid-template-areas: 
+        ".."
+        ".."
+        "h2"
+        "p"
+        "form"
+    ;
+}
 
+/* ===== mobile: footer styling ===== */
+footer.grid {
+    grid-template-areas: 
+        "img"
+        "contact"
+        "about"
+        "legal"
+        "social"
+    ;
+}
+
+.contact {
+    grid-area: contact;
+}
+
+.about-us {
+    grid-area: about;
+}
+
+.legal {
+    grid-area: legal;
+}
+
+.social {
+    grid-area: social;
+}
 
 /* ===== desktop styling ===== */
 
@@ -260,6 +300,17 @@ main {
 .testimonials > div:nth-child(3) {
     grid-area: t3;
 }
+
+/* ===== desktop: footer styling ===== */
+footer.grid {
+    grid-template-columns: repeat(5, auto);
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+        "img img img img img"
+        "contact contact about legal social"
+    ;
+}
+
 
 
 
