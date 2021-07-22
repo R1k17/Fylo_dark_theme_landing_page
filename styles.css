@@ -101,6 +101,8 @@ body {
     margin: 0;
     color: #fff;
     background-color: hsl(217, 28%, 15%);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
 }
 
 
@@ -131,6 +133,7 @@ footer {
 .sm-img {
     margin: 40px auto;
 }
+
 
 /* ===== mobile: header styling  ===== */
 header {
@@ -174,6 +177,25 @@ header > nav > ul > li {
     background-position: bottom;
     background-size: contain;
     background-color: hsl(217, 28%, 15%);
+
+    font-size: 10px;
+}
+
+.intro > div > h1 {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.intro > div > button {
+    border-radius: 25px;
+    border: none;
+    height: 50px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
+    /* background: rgb(101,226,217); */
+    background: linear-gradient(99deg, rgba(101,226,217,1) 0%, rgba(51,158,204,1) 100%);
 }
 
 
@@ -193,6 +215,18 @@ header > nav > ul > li {
     margin: 5px 0;
 }
 
+.benefits {
+    font-size: 10px;
+}
+
+.benefits > div {
+    margin-bottom: 100px;
+}
+
+.benefits > div > h2 {
+    font-weight: 700;
+}
+
 /* ===== mobile: stay productive styling ===== */
 .stay-productive > .grid {
     grid-template-areas: 
@@ -204,22 +238,64 @@ header > nav > ul > li {
     ;
 }
 
-/* ===== mobile: testimonials styling ===== */
-.testimonials {
-    background-color: hsl(219, 30%, 18%);
+
+.stay-productive > div > img {
+    margin-bottom: 50px;
 }
 
+.stay-productive > div {
+    font-size: 10px;
+}
+
+.stay-productive > div > h2, .stay-productive > div > p {
+    text-align: left;
+}
+
+.stay-productive > div > a {
+    color: hsl(176, 68%, 64%);
+    text-align: left;
+}
+
+/* ===== mobile: testimonials styling ===== */
+/* .testimonials {
+    
+} */
+
 .testimonials > .grid {
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: 50px auto;
     grid-template-areas: 
     ".. .."
     ".. .."
     "p p"
-    "img h2"
+    ".. h2"
     "img h3"
     ;
 }
 
+.testimonials > div {
+    border-radius: 5px;
+    background-color: hsl(219, 30%, 18%);
+    font-size: 10px;
+    padding: 10px 10px;
+    margin-bottom: 20px;
+}
+
+.testimonials > div > img {
+    width: 30px;
+    border-radius: 50px;
+}
+
+.testimonials > div > h3 {
+
+}
+
+.testimonials > div > h2 {
+    
+}
+
+.testimonials > div > p {
+    
+}
 /* ===== mobile: sign-up styling ===== */
 .sign-up > .grid {
     grid-template-areas: 
@@ -230,6 +306,51 @@ header > nav > ul > li {
         "form"
     ;
 }
+
+.sign-up {
+    height: 100%;
+    background: linear-gradient(0deg, hsl(216, 53%, 9%) 50%, hsl(218, 28%, 13%) 50%);
+}
+
+.sign-up > div {
+    border-radius: 5px;
+    background-color: hsl(219, 30%, 18%);
+    padding: 20px 20px;
+    font-size: 10px;
+}
+
+.sign-up > div > h2, .sign-up > div > p {
+    padding-bottom: 15px;
+}
+
+.sign-up > div > form > input {
+    margin-bottom: 15px;
+}
+
+.sign-up > div > form > input {
+    border-radius: 25px;
+    border: none;
+    height: 35px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+
+
+.sign-up > div > form > button {
+    border-radius: 25px;
+    border: none;
+    height: 35px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
+    /* background: rgb(101,226,217); */
+    background: linear-gradient(99deg, rgba(101,226,217,1) 0%, rgba(51,158,204,1) 100%);
+}
+
 
 /* ===== mobile: footer styling ===== */
 footer.grid {
