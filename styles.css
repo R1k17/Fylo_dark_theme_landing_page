@@ -133,16 +133,37 @@ footer {
 }
 
 /* ===== mobile: header styling  ===== */
+header {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    padding: 20px 20px;
+    position: relative;
+}
+
 header > img {
+    display: inline-block;
+    vertical-align: middle;
     width: 80px;
+    position: absolute;
+    left: 20px;
 }
 
 header > nav {
     display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    right: 20px;
+    top: 12px;
+}
+
+header > nav > ul {
+    padding: 0;
 }
 
 header > nav > ul > li {
     display: inline-block;
+    padding: 0 10px;
 }
 
 
