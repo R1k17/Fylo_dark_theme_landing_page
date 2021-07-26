@@ -299,14 +299,13 @@ header > nav > ul > li:hover {
     /* width: 100%; */
     /* height: 149px; */
     /* margin: 20px 20px; */
+
+    -webkit-box-shadow: 5px 5px 2px 0px rgba(0,0,0,0.52); 
+    box-shadow: 5px 5px 2px 0px rgba(7, 7, 7, 0.05);
 }
 
 .testimonials > div > img {
     width: 30px;
-
-
-
-
     position: absolute;
     left: 6.04%;
     right: 83.99%;
@@ -493,6 +492,10 @@ footer > nav > ul > li {
 @media (min-width: 1440px){
 /* ===== desktop:general styling ===== */
 
+body {
+    max-width: 1440px;
+}
+
 .padding {
     padding: 100px 400px;
 }
@@ -500,6 +503,13 @@ footer > nav > ul > li {
 .margin-child {
     margin: 10px 0;
 }
+
+/* ===== desktop:header styling ===== */
+header {
+    margin: 20px 20px;
+    
+}
+
 
 /* ===== desktop:intro styling ===== */
 .intro {
@@ -545,6 +555,7 @@ footer > nav > ul > li {
 .stay-productive > .grid {
     grid-template-columns: auto auto;
     grid-template-rows: repeat(4, auto);
+    column-gap: 50px;
     grid-template-areas: 
         "img h2"
         "img p1"
@@ -561,6 +572,9 @@ footer > nav > ul > li {
     grid-template-areas: 
         "t1 t2 t3"
     ;
+
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 .testimonials > div:first-child {
@@ -575,7 +589,27 @@ footer > nav > ul > li {
     grid-area: t3;
 }
 
+/* ===== desktop: sign-up styling ===== */
+.sign-up > div > form > input, .sign-up > div > form > button {
+    display: inline-block;
+    margin: auto 10px;
+}
+
+.sign-up > div > form > input {
+    width: 350px;
+}
+
+.sign-up > div > form > button {
+    width: 200px;
+}
+
 /* ===== desktop: footer styling ===== */
+footer.padding {
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+
 footer.grid {
     grid-template-columns: repeat(5, auto);
     grid-template-rows: auto auto;
@@ -583,6 +617,7 @@ footer.grid {
         "img img img img img"
         "contact contact about legal social"
     ;
+    column-gap: 100px;
 }
 
 
