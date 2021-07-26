@@ -169,6 +169,12 @@ header > nav > ul > li {
     padding: 0 10px;
 }
 
+header > nav > ul > li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
 
 /* ===== mobile: intro styling  ===== */
 .intro {
@@ -198,6 +204,10 @@ header > nav > ul > li {
     background: linear-gradient(99deg, rgba(101,226,217,1) 0%, rgba(51,158,204,1) 100%);
 }
 
+.intro > div > button:hover {
+    cursor: pointer;
+    background: rgba(101,226,217,1);
+}
 
 /* ===== mobile: benefits styling ===== */
 .benefits > .grid {
@@ -256,6 +266,10 @@ header > nav > ul > li {
     text-align: left;
 }
 
+.stay-productive > div > a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
 /* ===== mobile: testimonials styling ===== */
 .testimonials {
  margin-bottom: 100px;   
@@ -379,6 +393,8 @@ header > nav > ul > li {
     background-color: hsl(219, 30%, 18%);
     padding: 20px 20px;
     font-size: 10px;
+    -webkit-box-shadow: 5px 5px 2px 0px rgba(0,0,0,0.52); 
+    box-shadow: 5px 5px 2px 0px rgba(0,0,0,0.52);
 }
 
 .sign-up > div > h2, .sign-up > div > p {
@@ -411,6 +427,10 @@ header > nav > ul > li {
     background: linear-gradient(99deg, rgba(101,226,217,1) 0%, rgba(51,158,204,1) 100%);
 }
 
+.sign-up > div > form > button:hover {
+    cursor: pointer;
+    background: rgba(101,226,217,1);
+}
 
 /* ===== mobile: footer styling ===== */
 footer.grid {
@@ -458,6 +478,15 @@ footer > nav > ul > li {
     padding-right: 5px;
 }
 
+.contact > ul > li:last-child:hover, .about-us > ul > li:hover, .legal > ul > li:hover {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.social > ul > li:hover {
+    cursor: pointer;
+    color: hsl(176, 68%, 64%);
+}
 
 /* ===== desktop styling ===== */
 
